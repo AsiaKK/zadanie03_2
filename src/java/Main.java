@@ -1,19 +1,10 @@
 public class Main {
 
     public static void main(String[] args) {
-        Fridge fridge1 = new Fridge();
-        fridge1.colour = "black";
-        fridge1.height = 2.2;
-        fridge1.width = 6.7;
-        fridge1.numberOfDoors = 2;
+        Fridge fridge1 = new Fridge("black", 2.2,6.7, 2);
+        Fridge fridge2 = new Fridge("white", 2.0, 5.0, 1);
 
-        Fridge fridge2 = new Fridge();
-        fridge2.colour = "white";
-        fridge2.height = 2.0;
-        fridge2.width = 5.0;
-        fridge2.numberOfDoors = 1;
-
-        System.out.println("Data for Fridge1: ");
+        System.out.println("Data for Fridge1:");
         System.out.println("Colour:" + fridge1.colour);
         System.out.println("Height and width: " + fridge1.height + ", " + fridge1.width);
         System.out.println("Number of doors: " + fridge1.numberOfDoors);
